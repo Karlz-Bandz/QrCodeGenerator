@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'net.glxn.qrgen:qrgen-parent:2.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+
+    // https://mvnrepository.com/artifact/net.glxn.qrgen/core
+    implementation 'net.glxn.qrgen:core:2.0'
+    // https://mvnrepository.com/artifact/net.glxn.qrgen/javase
+    implementation 'net.glxn.qrgen:javase:2.0'
+
+
+
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
